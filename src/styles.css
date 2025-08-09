@@ -1,1 +1,45 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "tailwindcss";
+
+@theme {
+  /* FC Cookbook */
+  --color-fccb-50: #F8E5E5;
+  --color-fccb-100: #F1C8C8;
+  --color-fccb-200: #EBAAAA;
+  --color-fccb-300: #E38C8C;
+  --color-fccb-400: #DC6E6E;
+  --color-fccb-500: #D25A5A;
+  --color-fccb-600: #B84D4D;
+  --color-fccb-700: #9F4141;
+  --color-fccb-800: #853636;
+  --color-fccb-900: #6B2B2B;
+
+  /*Common Colors*/
+  --color-light-contrast: #29292A;
+  --color-dark-contrast: #FFFCF6;
+
+  /*Font Family*/
+  --font-sans: Lato, ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+
+html, body {
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+.cdk-overlay-pane {
+  width: auto !important;
+}
+
+.mat-mdc-menu-panel {
+  max-width: none !important;
+}
+
+.mat-mdc-menu-content {
+  li {
+    overflow: initial;
+  }
+}
+
