@@ -1,1 +1,21 @@
-<p>recipes-list-component works!</p>
+<app-active-filters-component></app-active-filters-component>
+<div class="w-full flex p-2">
+  <div class="title flex-2/3">
+    <h1 class="text-xl">
+      My Recipes
+    <fa-icon
+      class="pill-close text-fccb-600"
+      [icon]="faCaretDown"/>
+    </h1>
+  </div>
+  <div class="recipe-count flex-1/3 text-right">
+    <span class="">12 Recipes</span>
+  </div>
+</div>
+<div class="title w-full flex flex-col gap-10 p-2">
+  <app-recipe-card-component></app-recipe-card-component>
+  <app-recipe-card-component></app-recipe-card-component>
+  <app-recipe-card-component></app-recipe-card-component>
+  <app-recipe-card-component></app-recipe-card-component>
+  <app-recipe-card-component></app-recipe-card-component>
+</div>

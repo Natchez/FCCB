@@ -16,6 +16,9 @@
   --color-fccb-900: #6B2B2B;
 
   /*Common Colors*/
+  --color-primary :#474748;
+  --color-secondary :#747475;
+  --color-text-disabled :#D9D9DA;
   --color-light-contrast: #29292A;
   --color-dark-contrast: #FFFCF6;
 
@@ -25,7 +28,7 @@
 
 
 html, body {
-  overflow-x: hidden;
+  /*overflow-x: hidden;*/
   box-sizing: border-box;
 }
 

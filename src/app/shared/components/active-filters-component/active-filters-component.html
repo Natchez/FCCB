@@ -1,0 +1,25 @@
+<div class="sticky top-[64px] w-full py-2 px-1 overflow-x-auto bg-white">
+  <ul
+    class="active-filter-list list-none inline-flex items-center flex-nowrap">
+    <li class="items-center flex items-center">
+      <fa-icon
+        class="text-primary text-xl"
+        [icon]="faFilterCircleXmark"/>
+    </li>
+    @for (filter of filters; track filter) {
+      <li class="text-sm text-nowrap ml-1 bg-fccb-100 rounded-full">
+         <span
+           class="pill-name gap-1 px-3 py-0.5 flex items-center">{{
+             filter }}
+           <fa-icon
+             class="pill-close text-fccb-600"
+             [icon]="faClose"/>
+         </span>
+      </li>
+    } @empty {
+      <li class="text-sm px-3 flex items-center">No Active Filters</li>
+    }
+  </ul>
+
+</div>
+

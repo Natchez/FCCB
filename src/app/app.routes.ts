@@ -31,22 +31,39 @@ import {
   ForgotPasswordComponent
 } from './public/forgot-password-component/forgot-password-component';
 
+const tableView: string[] = ['fafilter', 'faList', 'faUser', 'faSearch', 'faAdd'];
+const editView: string[] = ['faEdit','faUser', 'faEllipsisV'];
+const viewOnly: string[] = [];
+
 export const routes: Routes = [
+
 
   {
     path: '',
     component: CoreLayoutComponent,
     children: [
       // Public
-      {path: '', component: RecipesListComponent},
-      {path: 'recipes/:recipeId', component: RecipeViewComponent},
+      {
+        path: '',
+        component: RecipesListComponent,
+        data : {icons: tableView}
+      },
+      {
+        path: 'recipes/:recipeId',
+        component: RecipeViewComponent,
+        data : {icons: editView}
+      },
 
       // Private routes (Authguarded)
       {
         path: 'my-recipes',
         canActivate: [authGuard],
         children: [
-          {path: '', component: MyRecipesComponent},
+          {
+            path: '',
+            component: RecipesListComponent,
+            data : {icons: tableView}
+          },
           {path: 'new', component: CreateRecipeComponent},
           {
             path: 'edit/:recipeId', component: RecipeEditComponent

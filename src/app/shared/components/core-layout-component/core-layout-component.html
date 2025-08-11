@@ -1,6 +1,36 @@
-<header class="p-5 grid grid-cols-3">
-  <p>FCCB</p>
-  <input type="text">
-  <p>Icons</p>
+<header
+  class="sticky top-0 p-3.5 grid grid-cols-2 md:grid-cols-4 bg-fccb-500 text-white">
+  <div class="text-3xl">
+    <fa-icon class="hidden" [icon]="faArrowLeft"/>
+    <fa-icon [icon]="faKitchen"/>
+    <span class="font-bold">FCCB</span>
+  </div>
+  <input class="col-span-2 px-2 bg-white text-black hidden md:inline"
+         id="recipeSearch"
+         placeholder="Search Recipes..."
+         type="text">
+  <div class="flex inline-flex justify-end gap-2">
+    <!--Pass in Icons from Component Being Rendered-->
+    <fa-icon class="text-2xl"
+             [icon]="faSearch"/>
+    <fa-icon class="text-2xl"
+             [icon]="faFilter"/>
+    <fa-icon class="text-2xl"
+             [icon]="faAdd"/>
+    <fa-icon class="hidden text-2xl"
+             [icon]="faEdit"/>
+    <fa-icon class="hidden text-2xl"
+             [icon]="faEllipsisV"/>
+    <fa-icon class="hidden text-2xl"
+             [icon]="faUser"/>
+    <fa-icon class="hidden text-2xl"
+             [icon]="faList"/>
+    <button
+      class="hidden md:inline font-bold cursor-pointer bg-white text-fccb-500 px-3 py-1 rounded-md text-xl">
+      <fa-icon class=""
+               [icon]="faAdd"/>
+      Button Text
+    </button>
+  </div>
 </header>
-<router-outlet />
+<router-outlet/>
