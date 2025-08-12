@@ -1,5 +1,4 @@
-<div
-  class="flex flex-col border-1 rounded-md border-text-disabled w-full recipe-card">
+<div class="flex-col border-b-1 border-text-disabled w-full recipe-card">
   <div class="">
 
     <img src="assets/noimg.png"
@@ -8,33 +7,10 @@
   </div>
   <div class="flex flex-col p-3 gap-2">
 
-    <div class="">
-
-      <h3 class="text-2xl text-primary">Beef Pho (Phở Bò)</h3>
-      <p class="text-secondary">
-        A fragrant, soul-warming noodle soup built around a crystal-clear
-        beef broth.</p>
-    </div>
-    <div class="text-primary text-xl">
-      <ul class="time-serving list-none inline-flex gap-3">
-        <li class="flex gap-1">
-          <fa-icon
-            class="pill-close"
-            [icon]="faClock"/>
-          <span>2 Hrs</span>
-
-        </li>
-        <li class="flex gap-1">
-          <fa-icon
-            class="pill-close"
-            [icon]="faBowlFood"/>
-          <span>10 large Bowls</span>
-
-        </li>
-      </ul>
-    </div>
-    <div class="text-primary text-xl">
-      <ul class="actions list-none inline-flex gap-3">
+    <div class="flex text-primary">
+      <h3 class="text-xl flex-2/3">Beef Pho (Phở Bò)</h3>
+      <ul
+        class="actions text-xl list-none inline-flex gap-1 justify-center">
         <li>
           <fa-icon
             class="pill-close"
@@ -51,7 +27,30 @@
             [icon]="faBookmark"/>
         </li>
       </ul>
+    </div>
+    <div class="">
 
+      <p class="text-secondary">
+        A fragrant, soul-warming noodle soup built around a crystal-clear
+        beef broth.</p>
+    </div>
+    <div class="text-primary text-lg">
+      <ul class="time-serving list-none inline-flex gap-3">
+        <li class="flex gap-1">
+          <fa-icon
+            class="pill-close"
+            [icon]="faClock"/>
+          <span>2 Hrs</span>
+
+        </li>
+        <li class="flex gap-1">
+          <fa-icon
+            class="pill-close"
+            [icon]="faBowlFood"/>
+          <span>10 large Bowls</span>
+
+        </li>
+      </ul>
     </div>
   </div>
 </div>

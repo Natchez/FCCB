@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {
   faBowlFood,
   faClipboardList,
@@ -20,6 +20,9 @@ import {FaIconComponent} from '@fortawesome/angular-fontawesome';
   styleUrl: './recipe-card-component.css'
 })
 export class RecipeCardComponent {
+
+  // This input should eventually just take a trimmed recipe object
+  @Input({alias: 'title'}) value = 'Recipe Title'
 
   faBowlFood = faBowlFood
   faClock = faClock

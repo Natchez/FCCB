@@ -1,8 +1,8 @@
 <app-active-filters-component></app-active-filters-component>
 <div class="w-full flex p-2">
   <div class="title flex-2/3">
-    <h1 class="text-xl">
-      My Recipes
+    <h1 class="text-2xl text-primary">
+      All Recipes
     <fa-icon
       class="pill-close text-fccb-600"
       [icon]="faCaretDown"/>
@@ -12,8 +12,9 @@
     <span class="">12 Recipes</span>
   </div>
 </div>
-<div class="title w-full flex flex-col gap-10 p-2">
-  <app-recipe-card-component></app-recipe-card-component>
+<div class="title w-full flex flex-col gap-3 p-2">
+  <app-recipe-card-component
+    routerLink="/recipes/1"></app-recipe-card-component>
   <app-recipe-card-component></app-recipe-card-component>
   <app-recipe-card-component></app-recipe-card-component>
   <app-recipe-card-component></app-recipe-card-component>
